@@ -1,6 +1,6 @@
 # hamster_wheel
-Test and derp projects
 
-This is purely a test!
+Life is like a hamster wheel: Write bad adages andenjoy some derp projects. 
 
-Test testtetesttest.
+Files in this folder:
+guess.cpp - A number guessing game I implemented in C++. 
