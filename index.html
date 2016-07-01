@@ -11,6 +11,16 @@
 				font-family: Verdana;
 				color: black;
 			}
+
+			body {
+				font-family: Verdana;
+				text-align: center;
+			}
+
+			h1 {
+
+			}
+
 		</style>
 
 		<script>
@@ -104,9 +114,11 @@
 	</head>
 
 	<body onload="startGame();">
-	<h1> Welcome to my Tic-Tac-Toe Game! </h1>
+	<h1> Let's play some Tic-Tac-Toe! </h1>
+	<p> Instructions: This is a two player game, so grab a friend and decide who would like to be X and O. Who the starting player is is randomized at the beginning. When it is your turn, click on an unoccupied square to claim your spot. First player to get three of their shapes in a row, column, or diagonal, wins! </p>
 		<div id="message"> Messages will go here</div>
-		<table border ="1">
+		</br>
+		<table border ="1", align="center">
 			<tr>
 				<td id="s1" class= "Square" onclick="nextMove(this);"></td>
 				<td id="s2" class= "Square" onclick="nextMove(this);"></td>
@@ -123,6 +135,7 @@
 				<td id="s9" class= "Square" onclick="nextMove(this);"></td>
 			</tr>	
 		</table>
+		</br>
 		<a href="javascript:startGame();">Start Over</a>
 	</body>
 </html>
