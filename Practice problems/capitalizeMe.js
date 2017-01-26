@@ -1,4 +1,4 @@
-function capitalize (example) {
+function capitalizeMe (example) {
 
 	let newString = "";
 
@@ -22,12 +22,12 @@ function capitalize (example) {
 }
 
 
-console.log(capitalize("agr ebw s a"));
-console.log(capitalize(" a gr ebw s a"));
-console.log(capitalize("  a gr ebw s a"));
-console.log(capitalize("    a gr ebw s a"));
-console.log(capitalize(" agr ebw s a "));
-console.log(capitalize(" agr ebw s a   aer "));
+console.log(capitalizeMe("agr ebw s a"));
+console.log(capitalizeMe(" a gr ebw s a"));
+console.log(capitalizeMe("  a gr ebw s a"));
+console.log(capitalizeMe("    a gr ebw s a"));
+console.log(capitalizeMe(" agr ebw s a "));
+console.log(capitalizeMe(" agr ebw s a   aer "));
 
 
 
