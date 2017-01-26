@@ -14,7 +14,7 @@ function capitalizeMe (example) {
 			let k = example.charAt(i).toUpperCase();
 			newString = newString.concat(k);
 		}
-		// O I'm just a regular letter that doesn't need to be cap'd and just concat'd
+		// I'm just a regular letter that doesn't need to be cap'd and just concat'd
 		else {
 			newString = newString.concat(example.charAt(i));
 		}
