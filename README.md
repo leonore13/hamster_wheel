@@ -2,9 +2,11 @@
 
 "Life is like a hamster wheel: Write bad adages and enjoy playing around with these projects."
 
-**Website:**
+**Projects:**
 
-1. tictactoe.html - A game of Tic-Tac-Toe in HTML and Javascript. Based on tutorial by <a href="https://youtu.be/_r9vhz7PZIE">Timothy James</a>
+1. timesheet - The front-end of a timesheet entry form in Javascript, HTML, CSS, jQuery
+
+2. tictactoe.html - A game of Tic-Tac-Toe in HTML and Javascript. Based on tutorial by <a href="https://youtu.be/_r9vhz7PZIE">Timothy James</a>
 
 Play it <a href="https://leonore13.github.io/" target="_blank">here! </a>
 
