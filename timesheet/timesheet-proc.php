@@ -13,6 +13,4 @@ if (empty($_POST["email"]) || empty($_POST["time"]))
 	
 $email = $_POST("email");
 $time = $_POST("time");
-
-
 ?>

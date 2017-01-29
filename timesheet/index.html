@@ -12,30 +12,27 @@
 
 	<body>
 		<div class="main-content">
-		<form class="timesheet-form" method="link" action="submission-success.html" name="timesheet" id="timesheet">
+		<form class="timesheet-form" method="post" action="timesheet-proc.php" name="timesheet" id="timesheet">
 			<div class="timesheet-form-title-row">
 				<h1>Submit Timesheet</h1>
 			</div>		
 				
-				<input type="text" name="email" placeholder="Email:" required onfocusout="validateEmail()";/> <p>
-				<input type="text" name="time" placeholder="Time:" required onfocusout="validateTime()"; /> <p>
+				<input type="text" name="email" placeholder="Email:" onfocusout="validateEmail()";/> <p>
+				<input type="text" name="time" placeholder="Time:" onfocusout="validateTime()";/> <p>
 				<textarea rows="4" cols="50" placeholder="Message (Optional):"></textarea> <br><br>
 
 			<h2> What type of work is this for?</h2><p>
 
 			<div align="left"> 
-            <span>Time working on visiual effects for movie</span>
-            <input type="checkbox" name="checkbox"> <p>
-			<span>Time spent reviewing the work of a junior artist</span> 
-            <input type="checkbox" name="checkbox"> <p>
-     </div> 
-            
-            
+            	<span>Time working on visual effects for movie</span>
+            	<input type="checkbox" name="checkbox"> <p>
+				<span>Time spent reviewing the work of a junior artist</span> 
+            	<input type="checkbox" name="checkbox"> <p>
+     		</div> 
             
 			<button type="button" id="btnSubmit" onmouseup="submitForm()";>Submit Form</button>
 			<button type="reset" id="btnReset">Reset</button>
-			
-           
+
 		</form>	
 		</div>
     </body>

@@ -1,7 +1,8 @@
 // Scripts for the timesheet
+
 function submitForm() {
     //TO-DO: Find a way to save email and time upon submission
-    //TO-DO: Make loading image overlay the current screen
+    //TO-DO: Make loading image overlay the current
             if ((validateEmail() === true) && (validateTime() === true)) {
             	$("#imagen").show();
             	setTimeout(function() {
