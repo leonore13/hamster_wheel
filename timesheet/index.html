@@ -5,18 +5,9 @@
 		<link rel="stylesheet" type="text/css" href="timesheet-form.css">
 		<img src="01-progress.gif" id="imagen" style="display:none"> 
 
+		<script src="timesheet-scripts.js"></script>
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    	<script type="text/javascript">
-    		  $(document).ready(function() {
-    		  		$('#btnSubmit').click(function() {
-            			$("#imagen").show();
-            			setTimeout(function() {
-              				$("#imagen").hide();
-              				location.href="submission-success.html";
-           				}, 1000);
-        			});
-       			});
-    	</script>
+
 	</head>
 
 	<body>
@@ -25,9 +16,9 @@
 			<div class="timesheet-form-title-row">
 				<h1>Submit Timesheet</h1>
 			</div>		
-
-				<input type="text" name="email" placeholder="Email:"/> <p>
-				<input type="text" name="time" placeholder="Time:"/> <p>
+				
+				<input type="text" name="email" placeholder="Email:" required onfocusout="validateEmail()";/> <p>
+				<input type="text" name="time" placeholder="Time:" required onfocusout="validateTime()"; /> <p>
 				<textarea rows="4" cols="50" placeholder="Message (Optional):"></textarea> <br><br>
 
 			<h2> What type of work is this for?</h2><p>
@@ -41,7 +32,7 @@
             
             
             
-			<button type="button" id="btnSubmit">Submit Form</button>
+			<button type="button" id="btnSubmit" onmouseup="submitForm()";>Submit Form</button>
 			<button type="reset" id="btnReset">Reset</button>
 			
            
@@ -83,7 +74,6 @@
 				return true;
 			}
 			*/
- -->
  -->
 
 
