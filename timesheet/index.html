@@ -3,16 +3,16 @@
     <head>
         <title>Submit Timesheet</title>
 		<link rel="stylesheet" type="text/css" href="timesheet-form.css">
-		<img src="01-progress.gif" id="imagen" style="display:none"> 
+		<img src="01-progress.gif" id="imagen" style="display:none" align="middle"> 
 
 		<script src="timesheet-scripts.js"></script>
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="jquery-1.9.1.min.js"></script>
 
 	</head>
 
 	<body>
 		<div class="main-content">
-		<form class="timesheet-form" method="post" action="timesheet-proc.php" name="timesheet" id="timesheet">
+		<form class="timesheet-form" method="link" action="submission-success.html" name="timesheet" id="timesheet">
 			<div class="timesheet-form-title-row">
 				<h1>Submit Timesheet</h1>
 			</div>		
@@ -40,41 +40,6 @@
 		</div>
     </body>
 </html> 
-<!-- 	
-    		$(document).ready(function() {
-
-        	// Here is how to show an error message next to a form field
-
-        	var errorField = $('.form-input-name-row');
-
-        	// Adding the form-invalid-data class will show
-        	// the error message and the red x for that field
-
-       		errorField.addClass('form-invalid-data');
-        	errorField.find('.form-invalid-data-info').text('Please enter your name');
-
-        	// Here is how to mark a field with a green check mark
-
-        	var successField = $('.form-input-email-row');
-
-        	successField.addClass('form-valid-data');
-    	});
-
-			document.timesheet.onsubmit=function()
-				{
-					if(document.contactform.email.value ==='') {
-					alert("Please enter your email");
-					document.contactform.email.focus();
-					return false;
-				} else if(document.contactform.time.value ==='') {
-					alert("Please enter your time");
-					document.contactform.time.focus();
-					return false;
-				}
-				return true;
-			}
-			*/
- -->
 
 
 
