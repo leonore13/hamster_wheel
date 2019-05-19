@@ -28,4 +28,31 @@ function iterFib(index) {
   }
   return sum;
 }
-console.log(iterFib(9));
+console.log("Iterative fib with 1: ", iterFib(1));
+console.log("Iterative fib with 5: ", iterFib(5));
+console.log("Iterative fib with 9: ", iterFib(9));
+
+//  Recursive solution
+function recurFib(index) {
+  if (index <= 1) {
+    return 1;
+  } else {
+    return recurFib(index - 1) + recurFib(index - 2);
+  }
+}
+console.log("Recursive fib with 1: ", recurFib(1));
+console.log("Recursive fib with 5: ", recurFib(5));
+console.log("Recursive fib with 9: ", recurFib(9));
+
+// Dynamic program solution
+function dynFib(index, fibSeq) {
+  if (index <= 1) {
+    return 1;
+  } else {
+    fibSeq[index] = recurFib(index - 1, fibSeq) + recurFib(index - 2, fibSeq);
+    return fibSeq[index];
+  }
+}
+console.log("Dynamic fib with 1: ", dynFib(1, []));
+console.log("Dynamic fib with 5: ", dynFib(5, []));
+console.log("Dynamic fib with 9: ", dynFib(9, []));
