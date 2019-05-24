@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>Path Finder Algorithm</h2>
-
-<p>Write a function that returns a full path from a list of subpaths</p>
-
-<p id="demo"></p>
-
-<script>
 const subPathArray1 = [
 ['D', 'E'],
 ['E', 'F']
@@ -39,7 +28,3 @@ function myFunction(array) {
 
 return array;
 }
-document.getElementById("demo").innerHTML = myFunction(subPathArray1);
-</script>
-
-</body>
